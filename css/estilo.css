@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    padding: 10px;
+    background-color: rgb(78, 78, 78);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+section{
+
+    width: 400px;
+    margin: auto;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: rgb(46, 53, 78);
+}
+/* Container Marcador */
+div.marcador{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    margin-top: 10px;
+}
+div.marcador div.marcadorJ{
+    background-color: rgb(74, 129, 145);
+    padding: 10px;
+    width: 30%;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 2px 5px 2px black;
+}
+div.marcador div h4{
+    display:block;
+    font-weight: bolder;
+    
+
+}
+
+div.marcador .container-turno{
+    background: none;
+    
+    font-size: 2em;
+}
+/* Container Juego */
+div.juego{
+    
+    display: grid;
+    justify-content: space-evenly;
+    width: 350px;
+    padding: 15px;
+    height: auto;
+    margin: auto;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+    align-items: center;
+    
+}
+.item{
+    width: 100px;
+    height: 100px;
+    
+    border: 1px solid black;height: 100px;
+    background-color: rgb(60, 60, 214);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+    font-size: 4em;
+    box-shadow: 4px 4px black;
+}
+.item:hover{
+    background-color: rgb(27, 27, 189);
+}
+
+
+/* Container Botones */
+/* Container Message */
+.botones-message{
+    /* visibility: hidden; */
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-size: 2em;
+}
+.container-restart{
+    width: 30%;
+    margin: 5px auto;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    background-color: green;
+    border-radius: 10px;
+    box-shadow: 2px 2px black;
+}
