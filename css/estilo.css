@@ -56,7 +56,7 @@ div.juego{
     grid-template-columns: repeat(3, 100px);
     grid-gap: 10px;
     align-items: center;
-    
+    position: relative;
 }
 .item{
     width: 100px;
@@ -74,25 +74,48 @@ div.juego{
 .item:hover{
     background-color: rgb(27, 27, 189);
 }
+.mensaje-inicio{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+    background-color: rgba(48, 48, 48, 0.493);
+}
+.mensaje-inicio button{
+    background: none;
+    border: none;
+    font-size: 3em;
+    color: white;
+}
 
 
 /* Container Botones */
 /* Container Message */
 .botones-message{
-    /* visibility: hidden; */
+    visibility: hidden;
     width: 90%;
     margin: auto;
     text-align: center;
     color: white;
     font-size: 2em;
 }
-.container-restart{
-    width: 30%;
+.container-botones{
     margin: 5px auto;
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-botones button{
+    font-size: 1.2em;
+    font-weight: bold;
     padding: 10px;
     color: white;
     text-align: center;
     background-color: green;
     border-radius: 10px;
+    border: none;
     box-shadow: 2px 2px black;
 }
