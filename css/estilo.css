@@ -8,7 +8,7 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 section{
-
+    
     width: 400px;
     margin: auto;
     padding: 10px;
@@ -45,8 +45,12 @@ div.marcador .container-turno{
     font-size: 2em;
 }
 /* Container Juego */
-div.juego{
+div.container-juego{
     
+    
+    position: relative;
+}
+.juego{
     display: grid;
     justify-content: space-evenly;
     width: 350px;
@@ -56,7 +60,6 @@ div.juego{
     grid-template-columns: repeat(3, 100px);
     grid-gap: 10px;
     align-items: center;
-    position: relative;
 }
 .item{
     width: 100px;
@@ -78,6 +81,7 @@ div.juego{
     display: flex;
     justify-content: space-around;
     position: absolute;
+    top: 0;
     width: 100%;
     height: 100%;
     
