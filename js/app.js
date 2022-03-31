@@ -79,10 +79,10 @@ const checkGame = () =>{
         console.log('winCheckV 1');
     }else if(arrayPositions[1] != '-'&& arrayPositions[1] === arrayPositions[4] && arrayPositions[7] === arrayPositions[1]){
         winCheck = true;
-        console.log('winCheckV 2')
+        console.log('winCheckV 2');
     }else if(arrayPositions[2] != '-'&& arrayPositions[2] === arrayPositions[5] && arrayPositions[8] === arrayPositions[2]){
         winCheck = true;
-        console.log('winCheckV 3')
+        console.log('winCheckV 3');
     }
     // Diagonal
     if(arrayPositions[0] != '-'&& arrayPositions[0] === arrayPositions[4] && arrayPositions[8] === arrayPositions[0]){
@@ -90,7 +90,11 @@ const checkGame = () =>{
         console.log('VictoriD 1');
     }else if(arrayPositions[2] != '-'&& arrayPositions[2] === arrayPositions[4] && arrayPositions[6] === arrayPositions[2]){
         winCheck = true;
-        console.log('winCheckD 2')
+        console.log('winCheckD 2');
+    }else if(winCheck == false &&  ! arrayPositions.includes( '-' )){
+        restartGame();
+        arrayPositions = ['-','-','-','-','-','-','-','-','-'];
+
     }
     //Mensaje Winner
     if(turnPlayerJ==false && winCheck==true){
